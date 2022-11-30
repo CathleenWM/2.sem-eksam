@@ -42,3 +42,16 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+.contact {
+    display: flex;
+}
+}
+
+/* For computer */
+@media only screen and (min-width: 768px) {
+
+}
