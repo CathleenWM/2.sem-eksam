@@ -8,7 +8,7 @@ h1, p{
     margin: 2px;
 }
 
-.icons{
+.number-icons{
     border-color: black;
     border-style: solid;
     border-width: 1px;
@@ -18,18 +18,69 @@ h1, p{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.icons{
+.number-icons{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*---------------------New section---------------------*/
+.some-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------------Values section---------------------*/
 
 .values-color{
 background-color: var(--accent);
 }
 
 .circles{
-    display: none;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*---------------------Boss section---------------------*/
+
+.iris{
+    padding-bottom: 20px;
+}
+
+.name-title{
+    display: flex;
+    align-items: center;
+}
+
+.fb-linkin{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 40px;
+    height: 40px;
+    margin: 2px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.fb-linkin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
