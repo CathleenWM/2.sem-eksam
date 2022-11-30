@@ -69,12 +69,12 @@ a:not(header a):not(.button) {
     text-decoration: underline;
 }
 
+/* Whitespace for sections*/
 .container {
     max-width: 1440px;
     margin-inline: auto;
 }
 
-/* padding og margin */
 .section-padding {
     padding-block: var(--whitespace-xl);
 }
