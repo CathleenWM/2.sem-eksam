@@ -8,3 +8,7 @@ Beskrivelse af virksomheden
 Hydrovertic er et start-up virksomhed fra 2020, der udvikler systemer til vertikalt og hydroponisk
 dyrkning af urter, grøntsager, blomster og andet grønt. Virksomheden præsenterer udfordringer og
 behov på kick-off.
+
+# Navngivningsregler
+Vi navngiver HTML og CSS med ***kebab-case***
+og JavaScript med ***camelCase***
