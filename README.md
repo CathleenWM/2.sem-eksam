@@ -10,5 +10,9 @@ dyrkning af urter, grøntsager, blomster og andet grønt. Virksomheden præsente
 behov på kick-off.
 
 # Navngivningsregler
-Vi navngiver HTML og CSS med ***kebab-case***
-og JavaScript med ***camelCase***
+Vi navngiver HTML og CSS med ***kebab-case***, fks. user-login-count
+
+og JavaScript med ***camelCase***, fks. userLoginCount
+
+# Billeder? Intet problem!
+[Klik mig](https://fakeimg.pl/)

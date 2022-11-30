@@ -1,11 +1,104 @@
 :root {
-    --primary-color: #f00;
+    --black: #3c3c3c;
+    --white: #fafafa;
 
-    --primary-cta: /* purple */
-    --secondary-cta: /* green */
-    
+    /* standard buttons (not CTA) */
+    --primary: #6D9140;
+
+    /* hover effect buttons (not CTA) */
+    --secondary: #B0DE78;
+
+    /* sections, header and footer  */
+    --accent: #D6FFA3;
+
+    /* CTA - stuff we *really* want people to notice */
+    --cta: #823191;
+
+    /* CTA hover color */
+    --cta-hover: #CE78DE;
+
+    /* margin og padding (whitespace) variabler*/
+    --whitespace-xs: 0.5rem;
+    --whitespace-sm: 1rem;
+    --whitespace-md: 1.5rem;
+    --whitespace-lg: 2.25rem;
+    --whitespace-xl: 3.75rem;
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* text */
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p,
+small,
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+small {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+}
+
+a:not(header a):not(.button) {
+    color: var(--cta);
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+/* padding og margin */
+.section-padding {
+    padding-block: var(--whitespace-xl);
+}
+
+/* buttons */
+.button {
+    color: var(--white);
+    font-weight: bold;
+    padding-block: var(--whitespace-sm);
+    padding-inline: var(--whitespace-md);
+}
+
+.cta-button {
+    background-color: var(--cta)
+}
+
+.cta-button:hover {
+    background-color: var(--cta-hover);
+}
+
+.standard-button {
+    background-color: var(--primary);
+}
+
+.standard-button:hover {
+    background-color: var(--secondary);
 }
