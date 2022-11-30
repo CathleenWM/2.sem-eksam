@@ -35,7 +35,15 @@ h1, p{
 background-color: var(--accent);
 }
 
-.circles{
+.values-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.number-circles{
     border-color: black;
     border-style: solid;
     border-width: 1px;
@@ -46,16 +54,20 @@ background-color: var(--accent);
     margin-right: 5px;
 }
 
-.circles{
+.number-circles{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.test{
+.circles-header{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.values{
+    padding-bottom: 15px;
 }
 
 /*---------------------Boss section---------------------*/
