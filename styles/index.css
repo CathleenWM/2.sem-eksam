@@ -1,0 +1,143 @@
+.green-accent {
+    background-color: var(--accent);
+}
+
+.temp-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: block;
+}
+
+.quote-image {
+    border-radius: 50%;
+}
+
+.marketing-hero img{
+    padding-bottom: var(--whitespace-md);
+}
+.marketing-hero h1{
+    padding-bottom: var(--whitespace-md);
+}
+
+.marketing-hero p{
+    padding-bottom: var(--whitespace-sm);
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-sm);
+}
+
+.benefits *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--whitespace-sm);
+}
+
+.benefits h2{
+    padding-bottom: var(--whitespace-md);
+}
+
+.benefits p{
+    padding-bottom: var(--whitespace-md);
+}
+
+.gardener-image{
+    width: 100%;
+}
+
+.gardener-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-md);
+}
+
+.gardener-cards{
+    display: flex;
+    flex-direction: row;
+    gap: var(--whitespace-sm);
+}
+
+.gardener-cards div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-sm);
+}
+
+.citation *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--whitespace-sm);
+}
+
+.dots-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.dots {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+}
+
+.dots-black {
+    background-color: var(--black);
+}
+
+.dots-white {
+    background-color: var(--white);
+}
+
+.partners-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-md);
+}
+
+.partners{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-sm);
+}
+
+.news-section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-md);
+}
+
+.news-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-md);
+}
+
+.news-card{
+    background-color: var(--white);
+}
+
+.news-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--whitespace-sm);
+    padding: var(--whitespace-sm);
+}
+
+
+
+@media only screen and (max-width: 640px) {
+   
+    .container {
+        padding-inline: 36px;
+    }
+
+}
+
+

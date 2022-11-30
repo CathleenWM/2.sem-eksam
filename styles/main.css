@@ -102,3 +102,21 @@ a:not(header a):not(.button) {
 .standard-button:hover {
     background-color: var(--secondary);
 }
+
+/* Header - Vicky */
+
+header {
+   /* display: flex;
+   flex-direction: row;  */
+   background-color: var(--accent);
+}
+
+.logo {
+    height: 3rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .logo {
+        height: 1.5rem;
+    }
+}
