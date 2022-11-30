@@ -1,0 +1,44 @@
+.contact-text {
+    margin: 35px 30px 35px 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 30px;
+}
+
+.contact-form input {
+    background-color: var(--white);
+    border-style: solid;
+    border-color: #707070;
+    padding: 15px;
+    margin: 8px;
+    height: 50px;
+    width: 75%;
+}
+
+.contact-form textarea {
+    background-color: var(--white);
+    border-style: solid;
+    border-color: #707070;
+    padding: 15px;
+    margin: 8px;
+    height: 150px;
+    width: 75%;
+}
+
+.contact-cta {
+    background-color: var(--cta);
+    color: var(--white);
+    padding: 15.5px 24px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
