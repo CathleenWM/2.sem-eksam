@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    padding: 36px;
 }
 
 h1, p{
@@ -26,8 +26,8 @@ h1, p{
 
 /*---------------------New section---------------------*/
 
-.section-keyvalues{
-    background-color: var(--accent);
+.values-color{
+background-color: var(--accent);
 }
 
 .circles{
