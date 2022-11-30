@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #f00;
+
+    --primary-cta: /* purple */
+    --secondary-cta: /* green */
+    
+}
+
+body {
+    background-color: var(--primary-color);
+}
