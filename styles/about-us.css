@@ -1,3 +1,6 @@
+.about-text > h1{
+    margin-bottom: 20px;
+}
 
 .number-icons{
     border-color: black;
@@ -32,6 +35,14 @@ background-color: var(--accent);
     padding-bottom: 30px;
 }
 
+.values-header > h2{
+    margin-bottom: 20px;
+}
+
+.values-header > p{
+    margin-bottom: 15px;
+}
+
 .number-circles{
     border-color: black;
     border-style: solid;
@@ -61,11 +72,15 @@ background-color: var(--accent);
 /*---------------------Boss section---------------------*/
 
 .bosses-header > h2{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .bosses-header > p{
     margin-bottom: 15px;
+}
+
+.bosses-header{
+    padding-bottom: 30px;
 }
 
 .iris{
@@ -114,6 +129,7 @@ background-color: var(--accent);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        margin-left: 30px;
     }
 
     .about-container{
@@ -123,12 +139,7 @@ background-color: var(--accent);
 
     .first-img{
         display: flex;
-        flex-direction: column;
-    }
-
-    .first-img{
-        height: 500px;
-        width: 500px;
+        flex-direction: column; 
     }
 
     .circles-header{
