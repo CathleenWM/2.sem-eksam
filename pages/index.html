@@ -14,14 +14,24 @@
 </head>
 <body>
     <header>
-        <div class="hidden container">
-            <img class="logo" src="../Asset 1.png" alt="logo">
+        <img class="logo" src="../Asset 1.png" alt="logo">
+        <div class="hidden lg-block container">
             <a href="">Forside</a>
             <a href="">Systemet</a>
             <a href="">Beregn Pris</a>
             <a href="">Om os</a>
-            <a class="button standard-button" href="">Kontakt os</a>
         </div>
+        <div class="lg-hidden">
+            <i id="burgerMenuIcon">burger icon</i>
+            <div id="burgerMenu">
+                <a href="">Forside</a>
+                <a href="">Systemet</a>
+                <a href="">Beregn Pris</a>
+                <a href="">Om os</a>
+            </div>
+        </div>
+        <a class="button standard-button" href="">Kontakt os</a>
+
     </header>
     <main>
         <section class="marketing-hero section-padding">
@@ -155,8 +165,61 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="section-padding bg-accent">
+        <div class="container">
+            <div class="footer-information">
+                <div class="mb-xl">
+                    <h2 class="mb-xs">Hydrovertic ApS</h2>
+                    <small class="mb-md">CVR: <a href="">41983337</a></small>
+    
+                    <p class="mb-md">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequuntur necessitatibus doloremque blanditiis nobis odio! Unde ea beatae ab, placeat aperiam dolores soluta officia reprehenderit laboriosam voluptates sint ipsam ducimus.</p>
+    
+                    <div class="socials-container">
+                        <div class="socials-fake-icon">
+                            <p>F</p>
+                        </div>
+    
+                        <div class="socials-fake-icon">
+                            <p>L</p>
+                        </div>
+    
+                        <a href="">contact@hydrovertic.com</a>
+                    </div>
+                </div>
 
+                <!-- used for flex spacing -->
+                <div class="hidden lg-block"></div>
+    
+                <div class="mb-xl">
+                    <h2 class="mb-md">Find os</h2>
+
+                    <div class="address-information">
+                        <div>
+                            <h3>Kontor</h3>
+    
+                            <p>Cortex Park 26</p>
+                            <p>5230 Odense M, DK</p>
+                            <a href="">Rute vejledning</a>
+                        </div>
+    
+                        <div>
+                            <h3>Kontor</h3>
+    
+                            <p>Cortex Park 26</p>
+                            <p>5230 Odense M, DK</p>
+                            <a href="">Rute vejledning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lg-text-center">
+                <p class="mb-xl">Development of the Hydrovertic System is supported by <a href="">Den Europæiske Landbrugsfond for Udvikling af Landdistrikterne</a>.</p>
+
+                <small class="lg-text-center">© 2020-2022 Hydrovertic. All rights reserved.</small>
+            </div>
+        </div>
     </footer>
 
     <template>
