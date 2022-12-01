@@ -132,6 +132,10 @@ header {
         height: 5rem;
     }
 
+    .lg-block {
+        display: block;
+    }
+
 }
 
 

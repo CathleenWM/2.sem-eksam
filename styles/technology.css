@@ -191,10 +191,6 @@
         flex-shrink: 0;
     } */
 
-    .lg-block {
-        display: block;
-    }
-
     .lg-hidden {
         display: none;
     }
