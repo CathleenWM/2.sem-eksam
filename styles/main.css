@@ -108,9 +108,13 @@ a:not(header a):not(.button) {
 /* Header - Vicky */
 
 header {
-   /* display: flex;
-   flex-direction: row;  */
    background-color: var(--accent);
+   padding: var(--whitespace-sm);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
@@ -188,18 +192,10 @@ header {
 }
 
 
-@media only screen and (min-width: 640px) {
-    
-    .logo {
-        height: 3rem;
-    }
-
-}
-
 @media only screen and (min-width: 1024px) {
     
     .logo {
-        height: 5rem;
+        height: 3rem;
     }
 
     .lg-block {
