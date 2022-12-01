@@ -32,8 +32,6 @@ background-color: var(--accent);
 .values-header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 30px;
 }
 
@@ -65,8 +63,27 @@ background-color: var(--accent);
 
 /*---------------------Boss section---------------------*/
 
+.bosses-header > h2{
+    margin-bottom: 20px;
+}
+
+.bosses-header > p{
+    margin-bottom: 15px;
+}
+
 .iris{
     padding-bottom: 20px;
+    gap: var(--whitespace-sm);
+}
+
+.jacob{
+    gap: var(--whitespace-sm);
+}
+
+.iris, .jacob{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .fb-linkin{
@@ -110,7 +127,11 @@ background-color: var(--accent);
     .first-img{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+    }
+
+    .first-img{
+        height: 500px;
+        width: 500px;
     }
 
     .circles-header{
@@ -137,6 +158,14 @@ background-color: var(--accent);
         margin-bottom: 20px;
     }
 
+    .values-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
     .number-circles{
         margin-right: 0;
         margin-bottom: 30px;
@@ -145,7 +174,11 @@ background-color: var(--accent);
         font-size: 2rem;
     }
 
-    
+
+    .iris{
+        padding-bottom: 0;
+    }
+
     .bosses-header{
         display: flex;
         flex-direction: column;
