@@ -8,6 +8,7 @@
     border-radius: 50%;
     background-color: var(--black);
     display: block;
+    flex-shrink: 0;
 }
 
 .quote-image {
@@ -25,10 +26,12 @@
     padding-bottom: var(--whitespace-sm);
 }
 
-.hero-buttons{
-    display: flex;
-    flex-direction: column;
-    gap: var(--whitespace-sm);
+.hero-buttons a:first-child{
+   margin-bottom: var(--whitespace-md);
+}
+
+.hero-buttons a{
+    flex-shrink: 0;
 }
 
 .benefits *{
@@ -123,14 +126,19 @@
     background-color: var(--white);
 }
 
+.news-card a{
+    flex-shrink: 0;
+}
+
 .news-card-text{
-    display: flex;
-    flex-direction: column;
-    gap: var(--whitespace-sm);
     padding: var(--whitespace-sm);
 }
 
+.news-card-text > *:not(:last-child){
+    margin-bottom: var(--whitespace-sm);
+}
 
+/* Tablet version */
 
 @media only screen and (max-width: 640px) {
    
