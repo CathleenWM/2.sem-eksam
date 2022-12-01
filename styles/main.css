@@ -151,11 +151,6 @@ header {
     gap: var(--whitespace-sm);
 }
 
-/* .burger-menu a{
-    padding-inline: var(--whitespace-md);
-    padding-block: var(--whitespace-xs);
-} */
-
 /***** Possibly Footer Stuff *****/
 .address-information {
     display: flex;
