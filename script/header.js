@@ -1,15 +1,6 @@
-window.addEventListener("DOMContentLoaded",load);
+const burgerMenu = document.querySelector("#burgerMenu");
+const burgerMenuIcon = document.querySelector("#burgerMenuIcon")
 
-function load (){
-    document.querySelector("#burgerMenuIcon").addEventListener("click",openBurgerMenu); 
-}
+const toggleBurgerMenu = () => burgerMenu.classList.toggle("hidden")
 
-function openBurgerMenu (){
-    let burgerMenu = document.querySelector("#burgerMenu");
-    if (burgerMenu.style.display === "flex") {
-        burgerMenu.style.display = "none";
-    }
-    else {
-        burgerMenu.style.display = "flex"
-    }
-}
+burgerMenuIcon.addEventListener("click", toggleBurgerMenu)
