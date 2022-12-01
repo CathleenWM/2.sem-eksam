@@ -66,7 +66,7 @@ a {
     display: inline-block;
 }
 
-a:not(header a):not(.button) {
+a:not(header a, .button) {
     color: var(--cta);
     text-decoration: underline;
 }
@@ -104,6 +104,12 @@ a:not(header a):not(.button) {
 
 .standard-button:hover {
     background-color: var(--secondary);
+}
+
+
+/***** Call to aaction *****/
+.cta-section a {
+    margin-top: var(--whitespace-md);
 }
 
 /* Header - Vicky */
@@ -226,6 +232,20 @@ header {
 
     .lg-text-center {
         text-align: center;
+    }
+
+    .cta-section {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta-section a {
+        margin-top: 0;
+    }
+
+    .cta-text {
+        max-width: 50%;
     }
 
 }

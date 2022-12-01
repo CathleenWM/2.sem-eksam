@@ -21,10 +21,6 @@
     flex-shrink: 0;
 }
 
-.cta-section a {
-    margin-top: var(--whitespace-md);
-}
-
 .faq-grid > div {
     margin-bottom: var(--whitespace-md);
 }
@@ -74,20 +70,6 @@
 @media screen and (min-width: 1024px) {
     .advantages-container {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .cta-section {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .cta-section a {
-        margin-top: 0;
-    }
-
-    .cta-text {
-        max-width: 50%;
     }
 
     .faq-grid {
