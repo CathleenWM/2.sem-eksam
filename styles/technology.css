@@ -21,10 +21,6 @@
     flex-shrink: 0;
 }
 
-.container {
-    padding-inline: var(--whitespace-md);
-}
-
 .cta-section a {
     margin-top: var(--whitespace-md);
 }
