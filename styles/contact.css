@@ -33,6 +33,7 @@
 .contact-cta {
     display: flex;
     margin-bottom: 20px;
+    margin-left: 60%;
 }
 
 .map {
@@ -45,12 +46,32 @@
 
 /* For tablets: */
 @media only screen and (min-width: 640px) {
-.contact {
-    display: flex;
-}
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .map iframe {
+        height: 100%;
+        width: 100%;
+    }
+
+    .contact-cta {
+        margin-left: 50%;
+    }
+
+    .contact-text {
+        width: 80%;
+    }
 }
 
 /* For computer */
 @media only screen and (min-width: 768px) {
+    .contact-cta {
+        margin-left: 75%;
+    }
 
+    .contact-text {
+        width: 90%;
+    }
 }
