@@ -1,14 +1,3 @@
-h1,
-h2,
-h3,
-small {
-    font-weight: bold;
-}
-
-small {
-    display: inline-block;
-}
-
 .address-information {
     display: flex;
     gap: var(--whitespace-lg);
@@ -113,10 +102,6 @@ small {
 /***** Utility Classes *****/
 .bg-accent {
     background-color: var(--accent);
-}
-
-.hidden {
-    display: none;
 }
 
 .mb-xs {

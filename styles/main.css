@@ -35,6 +35,7 @@ h1,
 h2,
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 h1 {
@@ -56,6 +57,7 @@ a {
 }
 
 small {
+    display: inline-block;
     font-size: 0.75rem;
     font-weight: bold;
 }
@@ -130,4 +132,11 @@ header {
         height: 5rem;
     }
 
+}
+
+
+
+/***** Utility Classes *****/
+.hidden {
+    display: none;
 }

@@ -56,8 +56,7 @@ background-color: var(--accent);
 
 .circles-header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 .values{
@@ -97,45 +96,73 @@ background-color: var(--accent);
 /* For computer */
 @media only screen and (min-width: 1024px) {
 
-.about-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .first-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .circles-header{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    .circles-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: var(--whitespace-xl);
+    }
+
+    .values{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .values-header > p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .number-circles{
+        margin-right: 0;
+        margin-bottom: 30px;
+        height: 80px;
+        width: 80px;
+        font-size: 2rem;
+    }
+
+    
+    .bosses-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .boss-flex {
+        display: flex;
+        justify-content: center;
+        gap: var(--whitespace-xl);
+    }
+
+    .boss-flex > div {
+        max-width: 300px;
+    }
+
 }
 
-.about-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
-.first-img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.circles-header{
-    flex-direction: column;
-}
-
-.circles-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-
-.bosses-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 60px;
-}
-
-.boss-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-}
