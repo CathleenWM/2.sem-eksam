@@ -136,6 +136,10 @@ header {
         display: block;
     }
 
+    .lg-hidden {
+        display: none;
+    }
+
 }
 
 

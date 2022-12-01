@@ -191,10 +191,6 @@
         flex-shrink: 0;
     } */
 
-    .lg-hidden {
-        display: none;
-    }
-
     .lg-max-width-half {
         max-width: 50%;
         margin-inline: auto;
