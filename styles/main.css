@@ -116,18 +116,45 @@ a:not(header a):not(.button) {
 
 header {
    background-color: var(--accent);
-   padding: var(--whitespace-sm);
+   padding-block: var(--whitespace-sm);
+   padding-inline: 36px;
+   position: relative;
 }
 
 .navbar{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--whitespace-md);
+}
+
+.logo-wrapper{
+    flex: 1;
 }
 
 .logo {
     height: 1.5rem;
+    min-width: 3rem;
 }
 
+.burger-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-block: var(--whitespace-md);
+    padding-inline: 36px;
+    gap: var(--whitespace-sm);
+}
+
+/* .burger-menu a{
+    padding-inline: var(--whitespace-md);
+    padding-block: var(--whitespace-xs);
+} */
 
 /***** Possibly Footer Stuff *****/
 .address-information {
