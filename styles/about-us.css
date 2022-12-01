@@ -90,28 +90,29 @@ background-color: var(--accent);
 /*---------------------Media queries---------------------*/
 
 /* For tablets: */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
 
 }
     
 /* For computer */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
-.hydrovertic{
-    height: 100%;
-    width: 100%;
-}
-
-.first-img{
-    width: 50%;
-    height: 50%;
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.first-img{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}    
+    flex-direction: column;
+    justify-content: center;
+}
 
 .circles-header{
     flex-direction: column;
