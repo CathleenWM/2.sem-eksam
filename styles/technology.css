@@ -61,12 +61,88 @@
 
 
 
-/* tablet */
-@media screen and (min-width: 640px) {
-
+/***** front page specific *****/
+.benefits-grid {
+    display: grid;
+    gap: var(--whitespace-lg);
 }
 
-/* desktop */
+.benefit > img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.partners-grid {
+    display: grid;
+    gap: var(--whitespace-lg);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-showcase {
+    margin-top: var(--whitespace-lg);
+}
+
+.product-showcase > img {
+    border-radius: 50%;
+    height: 100px;
+    margin-bottom: var(--whitespace-md);
+    width: auto;
+}
+
+.testimonial {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.testimonial > img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.testimonial-navigation {
+    display: flex;
+    justify-content: center;
+    gap: var(--whitespace-md);
+}
+
+.testimonial-navigation > div {
+    background-color: var(--white);
+    border-radius: 50%;
+    border: 1px solid var(--black);
+    height: 20px;
+    width: 20px;
+}
+
+.testimonial-navigation > div:nth-child(2) {
+    background-color: var(--black);
+}
+
+.news-article-grid {
+    display: grid;
+    gap: var(--whitespace-md);
+}
+
+.news-article {
+    background-color: var(--white);
+}
+
+.news-article img {
+    width: 100%;
+}
+
+.news-article-content {
+    padding: var(--whitespace-md);
+}
+
+.news-article-content > *:not(:first-child) {
+    margin-top: var(--whitespace-md);
+}
+
+/***** desktop *****/
 @media screen and (min-width: 1024px) {
     .advantages-container {
         grid-template-columns: 1fr 1fr;
@@ -89,5 +165,36 @@
 
     .split-section-text-left {
         justify-self: end;
+    }
+
+
+    /***** front page specific *****/
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .benefit {
+        text-align: center;
+    }
+
+    .partners-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-showcase {
+        display: flex;
+    }
+
+    .product-showcase > img {
+        margin-bottom: 0;
+        margin-right: var(--whitespace-lg);
+    }
+
+    .testimonial {
+        max-width: 50%;
+    }
+
+    .news-article-grid {
+        grid-template-columns: repeat(3, 3fr);
     }
 }
