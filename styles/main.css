@@ -142,6 +142,10 @@ header {
     cursor: pointer;
 }
 
+.desktop-navigation > a {
+    margin-left: var(--whitespace-md);
+}
+
 .burger-menu{
     position: absolute;
     top: 100%;
