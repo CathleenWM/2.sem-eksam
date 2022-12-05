@@ -23,7 +23,13 @@
     --whitespace-md: 1.5rem;
     --whitespace-lg: 2.25rem;
     --whitespace-xl: 3.75rem;
+
+    --border-radius: 3px
 }
+
+/* ion-icon {
+    font-size: 16px !important;
+} */
 
 body {
     background-color: var(--white);
@@ -71,6 +77,10 @@ a:not(header a, .button) {
     text-decoration: underline;
 }
 
+a > ion-icon {
+    color: var(--black);
+}
+
 /* Whitespace for sections*/
 .container {
     max-width: 1280px;
@@ -84,6 +94,7 @@ a:not(header a, .button) {
 
 /* buttons */
 .button {
+    border-radius: var(--border-radius);
     color: var(--white);
     font-weight: bold;
     padding-block: var(--whitespace-sm);
@@ -222,6 +233,10 @@ header {
 
 .mb-xl {
     margin-bottom: var(--whitespace-xl);
+}
+
+.rounded {
+    border-radius: var(--border-radius);
 }
 
 .text-center {
