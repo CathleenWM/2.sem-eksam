@@ -54,10 +54,9 @@
 }
 
 .gallery-image-wide {
-    aspect-ratio: 2;
-    height: 100%;
     grid-column-end: span 2;
-    padding-bottom: calc(var(--whitespace-sm) / 2);
+    height: calc(100% - var(--whitespace-sm) / 2);
+    width: 100%;
 }
 
 
