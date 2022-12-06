@@ -24,7 +24,8 @@
     --whitespace-lg: 2.25rem;
     --whitespace-xl: 3.75rem;
 
-    --border-radius: 3px
+    --border-radius: 3px;
+    --shadow: 0 3px 6px #3c3c3c29;
 }
 
 /* ion-icon {
@@ -95,10 +96,15 @@ a > ion-icon {
 /* buttons */
 .button {
     border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
     color: var(--white);
     font-weight: bold;
     padding-block: var(--whitespace-sm);
     padding-inline: var(--whitespace-md);
+}
+
+.button:hover {
+    color: var(--black);
 }
 
 .cta-button {
@@ -245,6 +251,10 @@ header {
 
 .rounded-top {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.shadow {
+    box-shadow: var(--shadow);
 }
 
 .text-center {
