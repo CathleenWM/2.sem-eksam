@@ -68,8 +68,7 @@
 }
 
 .benefit > img {
-    border-radius: 50%;
-    width: 100px;
+    width: 75px;
 }
 
 .partners-grid {
@@ -78,13 +77,19 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.partners-grid > img {
+    height: 185px;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
 .product-showcase {
     margin-top: var(--whitespace-lg);
 }
 
 .product-showcase > img {
-    border-radius: 50%;
-    height: 100px;
+    /* border-radius: 50%; */
+    height: 75px;
     margin-bottom: var(--whitespace-md);
     width: auto;
 }
@@ -94,9 +99,18 @@
     margin-inline: auto;
 }
 
+
+.testimonial > blockquote {
+    font-family: amster, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
 .testimonial > img {
     border-radius: 50%;
     width: 100px;
+    height: 100px;
 }
 
 .italic {
