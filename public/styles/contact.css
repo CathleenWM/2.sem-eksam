@@ -32,6 +32,8 @@
 
 .contact-cta {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-bottom: 20px;
     margin-left: 60%;
     margin-right: 82px;
