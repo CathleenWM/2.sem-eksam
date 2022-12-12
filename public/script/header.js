@@ -1,17 +1,23 @@
-window.addEventListener("DOMContentLoaded",load);
-
 const burgerMenu = document.querySelector("#burgerMenu");
 const burgerMenuIcon = document.querySelector("#burgerMenuIcon");
+const windowPane = document.querySelector("#windowPane");
 
-const toggleBurgerMenu = () => burgerMenu.classList.toggle("hidden");
+window.addEventListener("DOMContentLoaded",load);
 
 function load (){
     burgerMenuIcon.addEventListener("click", toggleBurgerMenu);
-    burgerMenuIcon.addEventListener("click", changeIcon)
+    windowPane.addEventListener("click", closeBurgerMenu, toggleBurgerMenu);
 }
 
-function changeIcon (){
-    burgerMenuIcon.classList.toggle("fa-bars")
-    burgerMenuIcon.classList.toggle("fa-x")
+function toggleBurgerMenu (){
+    burgerMenu.classList.toggle("hidden");
+    burgerMenuIcon.classList.toggle("fa-bars");
+    burgerMenuIcon.classList.toggle("fa-x");
 }
 
+function closeBurgerMenu (){
+    if (burgerMenu.classList.contains("hidden")){
+        
+    }
+    burgerMenu.classList.add("hidden");
+}
