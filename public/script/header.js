@@ -15,12 +15,3 @@ function changeIcon (){
     burgerMenuIcon.classList.toggle("fa-x")
 }
 
-
-
-// const circle = 'fa-circle'
-// const check = 'fa-check-circle'
-// const toggler = document.getElementById('toggle')
-// toggle.onclick = () => {
-//   toggler.classList.toggle(circle)
-//   toggler.classList.toggle(check)
-// }
