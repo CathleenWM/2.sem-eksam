@@ -15,33 +15,34 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo-wrapper">
-                <a href="index.html">
-                    <img class="logo" src="images/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="hidden lg-block desktop-navigation">
-                <a href="index.html">Forside</a>
-                <a href="technology.html">Systemet</a>
-                <a href="">Beregn Pris</a>
-                <a href="about-us.html">Om os</a>
-                <a class="button standard-button" href="contact.html">Kontakt os</a>
-            </div>
-            <div class="lg-hidden">
-                <ion-icon id="burgerMenuIcon" name="menu-outline" size="large"></ion-icon>
-
-                <div id="burgerMenu" class="burger-menu hidden">
+    <div class="header-container">
+        <header>
+            <div class="navbar">
+                <div class="logo-wrapper">
+                    <a href="index.html">
+                        <img class="logo" src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="hidden lg-block desktop-navigation">
                     <a href="index.html">Forside</a>
                     <a href="technology.html">Systemet</a>
-                    <a href="">Beregn Pris</a>
                     <a href="about-us.html">Om os</a>
-                    <a href="contact.html">Kontakt os</a>
+                    <a class="button standard-button rounded" href="contact.html">Kontakt os</a>
+                </div>
+                <div class="lg-hidden">
+                    <!-- <ion-icon id="burgerMenuIcon" name="menu-outline" size="large"></ion-icon> -->
+                    <i id="burgerMenuIcon" class="fa-solid fa-bars"></i>
                 </div>
             </div>
+        </header>
+    
+        <div id="burgerMenu" class="burger-menu hidden">
+            <a href="index.html">Forside</a>
+            <a href="technology.html">Systemet</a>
+            <a href="about-us.html">Om os</a>
+            <a href="contact.html">Kontakt os</a>
         </div>
-    </header>
+    </div>
 
     <main>
         <section class="section-padding">
@@ -203,5 +204,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="script/header.js"></script>
 </body>
 </html>
