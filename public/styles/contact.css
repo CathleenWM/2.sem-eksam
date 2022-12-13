@@ -13,9 +13,8 @@
     border-style: solid;
     border-color: #707070;
     padding: 15px;
-    margin: 8px;
+    margin: 8px 0px;
     height: 50px;
-    width: 90%;
     display: block;
 }
 
@@ -24,9 +23,8 @@
     border-style: solid;
     border-color: #707070;
     padding: 15px;
-    margin: 8px;
+    margin: 8px 0px;
     height: 150px;
-    width: 90%;
     display: block;
 }
 
@@ -34,8 +32,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 8px 0px;
     margin-bottom: 20px;
-    margin-left: 60%;
+    margin-left: auto;
+    align-self: right;
+    width: 100px;
 }
 
 .map {
@@ -61,10 +62,6 @@
         width: 100%;
     }
 
-    .contact-cta {
-        margin-left: 50%;
-    }
-
     .contact-text {
         width: 80%;
     }
@@ -72,10 +69,9 @@
 
 /* For computer */
 @media only screen and (min-width: 768px) {
-    .contact-cta {
-        margin-left: 75%;
-        margin-right: auto;
-    }
+   .contact-form{
+    margin: 35px 30px;
+   }
 
     .contact-text {
         width: 90%;
