@@ -38,7 +38,7 @@ for (let index = -(menuHeight - headerHeight); index < headerHeight; index++) {
 async function animation () {
     for (let index = 0; index < sizes.length; index++) {
         burgerMenu.style.top = sizes[index] + 'px'
-        await sleep(5)
+        await sleep(2)
     }
 }
 

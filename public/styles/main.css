@@ -131,11 +131,16 @@ a > ion-icon {
 
 /* Header - Vicky */
 
+.header-container{
+    position: fixed;
+}
+
 header {
    background-color: var(--accent);
    padding-block: var(--whitespace-sm);
    padding-inline: 36px;
-   position: relative;
+   position: fixed;
+   width: 100%;
 }
 
 .navbar{
@@ -174,6 +179,10 @@ header {
     padding-block: var(--whitespace-md);
     padding-inline: 36px;
     gap: var(--whitespace-sm);
+}
+
+main{
+    padding-top: 4rem ;
 }
 
 /***** Possibly Footer Stuff *****/

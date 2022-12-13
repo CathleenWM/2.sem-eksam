@@ -39,7 +39,7 @@ const switchTestimonials = (index) => {
     testimonials.children[currentIndex].classList.add('hidden')
     testimonialDots[currentIndex].classList.remove('active')
 
-    console.log('index before', currentIndex);
+    console.log('index before', currentIndex)
 
     if (index != null) {
         currentIndex = index
@@ -51,7 +51,7 @@ const switchTestimonials = (index) => {
         }
     }
 
-    console.log('index after', currentIndex);
+    console.log('index after', currentIndex)
 
     testimonialDots[currentIndex].classList.add('active')
     testimonials.children[currentIndex].classList.remove('hidden')
