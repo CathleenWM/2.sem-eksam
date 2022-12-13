@@ -1,22 +1,23 @@
 const burgerMenu = document.querySelector("#burgerMenu");
-const burgerMenuIcon = document.querySelector("#burgerMenuIcon")
+const burgerMenuIcon = document.querySelector("#burgerMenuIcon");
+const windowPane = document.querySelector("#windowPane");
 
-const toggleBurgerMenu = () => burgerMenu.classList.toggle("hidden")
+window.addEventListener("DOMContentLoaded",load);
 
-burgerMenuIcon.addEventListener("click", toggleBurgerMenu)
+function load (){
+    burgerMenuIcon.addEventListener("click", toggleBurgerMenu);
+    windowPane.addEventListener("click", closeBurgerMenu, toggleBurgerMenu);
+}
 
-//  window.addEventListener("DOMContentLoaded",load);
+function toggleBurgerMenu (){
+    burgerMenu.classList.toggle("hidden");
+    burgerMenuIcon.classList.toggle("fa-bars");
+    burgerMenuIcon.classList.toggle("fa-x");
+}
 
-// function load (){
-//     document.querySelector("#burgerMenuIcon").addEventListener("click",openBurgerMenu); 
-// }
-
-// function openBurgerMenu (){
-//     let burgerMenu = document.querySelector("#burgerMenu");
-//     if (burgerMenu.style.display === "flex") {
-//         burgerMenu.style.display = "none";
-//     }
-//     else {
-//         burgerMenu.style.display = "flex"
-//     }
-// }
+function closeBurgerMenu (){
+    if (burgerMenu.classList.contains("hidden")){
+        
+    }
+    burgerMenu.classList.add("hidden");
+}

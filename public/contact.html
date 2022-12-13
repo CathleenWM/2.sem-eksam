@@ -42,6 +42,8 @@
         </div>
     </header>
 
+    <!---------- Start af siden ---------->
+
     <section class="contact">
 
         <div>
@@ -52,16 +54,17 @@
 
             <div class="contact-container">
 
-                <form action="" class="contact-form">
-                    <input type="text" placeholder="Fulde navn">
-                    <input type="text" placeholder="Virksomhed (valgfri)">
-                    <input type="email" name="" id="" placeholder="Email adresse">
-                    <input type="number" placeholder="Telefon (valgfri)">
+                <form action="" id="form" class="contact-form">
+                    <input type="text" id="fullname" placeholder="Fulde navn">
+                    <input type="text" id="corporation" placeholder="Virksomhed (valgfri)">
+                    <input type="email" name="" id="email" placeholder="Email adresse">
+                    <input type="number" id="phone" placeholder="Telefon (valgfri)">
                     <input type="text" placeholder="Emne (valgfri)">
                     <textarea name="" id="" cols="30" rows="5" placeholder="Besked"></textarea>
+                
+                    <button type="submit" class="button cta-button contact-cta">Indsend</button>
                 </form>
-
-                <button class="button cta-button contact-cta">Indsend</button>
+                
             </div>
             
         </div>
@@ -71,6 +74,8 @@
         </div>
 
     </section>
+
+    <!---------- Footer ---------->
 
     <footer class="section-padding bg-accent">
         <div class="container">
@@ -131,5 +136,6 @@
     
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="contactform.js"></script>
 </body>
 </html>
