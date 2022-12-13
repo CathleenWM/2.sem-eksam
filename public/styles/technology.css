@@ -190,8 +190,18 @@
         text-align: center;
     }
 
+    .partners-container {
+        overflow: hidden;
+    }
+
     .partners-grid {
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        width: 100%;
+    }
+
+    .partners-grid > * {
+        min-width: 20%;
+        max-width: 20%;
     }
 
     .product-showcase {
