@@ -7,10 +7,10 @@ const form = document.getElementById('form')
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault
+    e.preventDefault();
     console.log(e);
     let messages = [];
     if (fullname.value === '' ) {
         messages.push('Navn er påkrævet');
     }
-});
+})
