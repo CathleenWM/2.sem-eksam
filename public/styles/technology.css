@@ -62,6 +62,10 @@
 
 
 /***** front page specific *****/
+header {
+    z-index: 5;
+}
+
 .benefits-grid {
     display: grid;
     gap: var(--whitespace-lg);
