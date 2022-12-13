@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/b6aff02aa6.js" crossorigin="anonymous"></script>
 
     <script src="script/partners.js" defer></script>
-
+    <script src="script/testimonials.js" defer></script>
 </head>
 <body>
     <header>
@@ -141,22 +141,33 @@
             <div class="container text-center">
                 <h2 class="mb-xl">Der er meget godt at sige om vores system</h2>
 
-                <div class="testimonial mb-lg">
-                    <img class="shadow mb-md" src="images/torben.png" alt="">
-
-                    <blockquote class="mb-lg"><q>&nbsp;At teste Hydrovertic systemet ville være godt at prøve af, da det kunne være en fremtidig løsning at producere planter i en planteskole da man gerne vil gro flere planter på det samme m2 - ved brug af det samme varme og arbejdskraft på et meget mindre areal&nbsp;</q></blockquote>
-
-                    <p class="mb-xs">Søren Ditlev</p>
-
-                    <small>Ejer af Ditlevsgartneri</small>
+                <div id="testimonials">
+                    <div class="testimonial mb-lg">
+                        <img class="shadow mb-md" src="images/torben.png" alt="">
+    
+                        <blockquote class="mb-lg"><q>&nbsp;At teste Hydrovertic systemet ville være godt at prøve af, da det kunne være en fremtidig løsning at producere planter i en planteskole da man gerne vil gro flere planter på det samme m2 - ved brug af det samme varme og arbejdskraft på et meget mindre areal&nbsp;</q></blockquote>
+    
+                        <p class="mb-xs">Søren Ditlev</p>
+    
+                        <small>Ejer af Ditlevsgartneri</small>
+                    </div>
+    
+                    <div class="hidden testimonial mb-lg">
+                        <img class="shadow mb-md" src="images/torben.png" alt="">
+    
+                        <blockquote class="mb-lg"><q>&nbsp;smart stuff about Hydrovertic goes here&nbsp;</q></blockquote>
+    
+                        <p class="mb-xs">Some Dude</p>
+    
+                        <small>I own shit</small>
+                    </div>
                 </div>
-            </div>
 
-                <div class="testimonial-navigation">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                <template id="dot-template">
+                    <div class="testimonial-dot"></div>
+                </template>
+
+                <div id="testimonial-dots-container" class="testimonial-navigation"></div>
             </div>
         </section>
 
@@ -168,11 +179,11 @@
 
             <div id="partners" class="partners-container">
                 <div id="partnersList" class="partners-grid">
-                    <img class="rounded test" src="images/logos/accelerace_logo.png" alt="">
-                    <img class="rounded" src="images/logos/sdg_logo.png" alt="">
-                    <img class="rounded" src="images/logos/mikrolegat.png" alt="">
-                    <img class="rounded" src="images/logos/moellerens_logo.png" alt="">
-                    <img class="rounded" src="images/logos/venture-cup_logo.png" alt="">
+                    <img class="rounded test" src="images/logos/accelerace_logo.png" alt="Beyond Beta">
+                    <img class="rounded" src="images/logos/sdg_logo.png" alt="Suspendissestainary SDG Tech Awards">
+                    <img class="rounded" src="images/logos/mikrolegat.png" alt="Mikrolegat">
+                    <img class="rounded" src="images/logos/moellerens_logo.png" alt="Moellernes Fond">
+                    <img class="rounded" src="images/logos/venture-cup_logo.png" alt="National Startup Competition">
                 </div>
             </div>
         </section>
