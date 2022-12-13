@@ -71,10 +71,19 @@
     width: 75px;
 }
 
+.partners-container {
+    overflow: hidden;
+}
+
 .partners-grid {
-    display: grid;
-    gap: var(--whitespace-lg);
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 36px;
+    width: 100%;
+}
+
+.partners-grid > * {
+    min-width: 50%;
+    max-width: 50%;
 }
 
 .partners-grid > img {
@@ -128,9 +137,10 @@
     border: 1px solid var(--black);
     height: 20px;
     width: 20px;
+    cursor: pointer;
 }
 
-.testimonial-navigation > div:nth-child(2) {
+.testimonial-navigation > .active {
     background-color: var(--black);
 }
 
@@ -188,15 +198,6 @@
 
     .benefit {
         text-align: center;
-    }
-
-    .partners-container {
-        overflow: hidden;
-    }
-
-    .partners-grid {
-        display: flex;
-        width: 100%;
     }
 
     .partners-grid > * {
