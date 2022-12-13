@@ -36,7 +36,6 @@
     justify-content: center;
     margin-bottom: 20px;
     margin-left: 60%;
-    margin-right: 82px;
 }
 
 .map {
@@ -75,6 +74,7 @@
 @media only screen and (min-width: 768px) {
     .contact-cta {
         margin-left: 75%;
+        margin-right: auto;
     }
 
     .contact-text {
