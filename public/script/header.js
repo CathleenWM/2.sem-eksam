@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded",load);
 
 function load (){
     burgerMenuIcon.addEventListener("click", toggleBurgerMenu);
-    windowPane.addEventListener("click", closeBurgerMenu, toggleBurgerMenu);
+    windowPane.addEventListener("click", closeBurgerMenu);
 }
 
 function toggleBurgerMenu (){
@@ -17,7 +17,8 @@ function toggleBurgerMenu (){
 
 function closeBurgerMenu (){
     if (burgerMenu.classList.contains("hidden")){
-        
+        windowPane.removeEventListener("click", toggleBurgerMenu);
+    } else {
+        windowPane.addEventListener("click", toggleBurgerMenu);
     }
-    burgerMenu.classList.add("hidden");
 }
