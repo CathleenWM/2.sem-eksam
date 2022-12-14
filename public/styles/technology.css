@@ -32,6 +32,8 @@
 
 .split-section-image {
     aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
 }
 
 .split-section {
@@ -53,10 +55,20 @@
     grid-auto-flow: dense;
 }
 
+.gallery-grid img {
+    object-fit: cover;
+}
+
+.gallery-grid img:not(.gallery-image-wide) {
+    aspect-ratio: 1;
+    width: 100%;
+}
+
 .gallery-image-wide {
     grid-column-end: span 2;
     height: calc(100% - var(--whitespace-sm) / 2);
-    width: 100%;
+    aspect-ratio: 2 / 1;
+    width: 100%
 }
 
 
