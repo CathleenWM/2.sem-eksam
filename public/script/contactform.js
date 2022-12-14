@@ -45,6 +45,14 @@ form.addEventListener('submit', (e) => {
 
 })
 
+const queryString = window.location.search;
+console.log(queryString);
+
+const urlParams = new URLSearchParams(queryString);
+
+const product = urlParams.get('submit')
+console.log(submit);
+
 
 function cleanErrors(){
 
