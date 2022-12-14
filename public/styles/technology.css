@@ -62,8 +62,8 @@
 
 
 /***** front page specific *****/
-header {
-    z-index: 5;
+.header-container {
+    z-index: 999;
 }
 
 .benefits-grid {
