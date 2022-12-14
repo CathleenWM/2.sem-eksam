@@ -1,11 +1,17 @@
 // TODO: Fade in and out
-// TODO: Add arrow keys to desktop on hover
-// TODO: Implement swipe functionality
+// TODO: Prevent section from changing height
 
 const testimonials = document.getElementById('testimonials')
 const numTestimonials = testimonials.children.length - 1
 const testimonialDotsContainer = document.getElementById('testimonial-dots-container')
 const dotTemplate = document.getElementById('dot-template')
+
+const previousTestimonial = document.getElementById('previous-testimonial')
+const nextTestimonial = document.getElementById('next-testimonial')
+
+previousTestimonial.addEventListener('click', () => switchTestimonials(currentIndex - 1))
+nextTestimonial.addEventListener('click', () => switchTestimonials(currentIndex + 1))
+
 
 let currentIndex = 0
 
@@ -29,17 +35,18 @@ for (let index = 0; index < testimonialDots.length; index++) {
 
         event.target.classList.add('active')
 
-        clearInterval(testimonialsLoop)
         switchTestimonials(index)
-        testimonialsLoop = startTestimonialsLoop()
     })
 }
 
 const switchTestimonials = (index) => {
+    clearInterval(testimonialsLoop)
+
+    if (index < 0) index = numTestimonials
+    if (index > numTestimonials) index = 0
+
     testimonials.children[currentIndex].classList.add('hidden')
     testimonialDots[currentIndex].classList.remove('active')
-
-    console.log('index before', currentIndex)
 
     if (index != null) {
         currentIndex = index
@@ -51,10 +58,10 @@ const switchTestimonials = (index) => {
         }
     }
 
-    console.log('index after', currentIndex)
-
     testimonialDots[currentIndex].classList.add('active')
     testimonials.children[currentIndex].classList.remove('hidden')
+    
+    testimonialsLoop = startTestimonialsLoop()
 }
 
 const startTestimonialsLoop = () => {
@@ -64,3 +71,26 @@ const startTestimonialsLoop = () => {
 }
 
 let testimonialsLoop = startTestimonialsLoop()
+
+let touchStart
+let touchEnd
+
+testimonials.addEventListener('touchstart', function (event) {
+    touchStart = event.changedTouches[0].screenX;
+});
+
+testimonials.addEventListener('touchend', function (event) {
+    touchEnd = event.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+
+function handleSwipe() {
+    if (touchEnd < touchStart) {
+        switchTestimonials(currentIndex + 1)
+    }
+
+    if (touchEnd > touchStart) {
+        switchTestimonials(currentIndex - 1)
+    }
+}

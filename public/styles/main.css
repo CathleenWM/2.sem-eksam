@@ -226,6 +226,10 @@ main{
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 .mb-xs {
     margin-bottom: var(--whitespace-xs);
 }

@@ -106,11 +106,31 @@ header {
     width: auto;
 }
 
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.testimonials-container ion-icon {
+    font-size: 4rem;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+section:hover .testimonials-container ion-icon {
+    visibility: visible;
+}
+
+.testimonials {
+    width: 100%;
+}
+
 .testimonial {
     text-align: center;
     margin-inline: auto;
 }
-
 
 .testimonial > blockquote {
     font-family: amster, serif;

@@ -41,16 +41,3 @@ async function animation () {
         await sleep(2)
     }
 }
-
-// array fra 1-x(173)
-// document selector
-// get element height 173
-// assign to const
-
-// current index = 0
-// while loop current index less than height
-// append current index to array
-// increment current index
-
-
-
