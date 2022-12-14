@@ -186,6 +186,13 @@ main{
 }
 
 /***** Possibly Footer Stuff *****/
+footer input {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    padding: var(--whitespace-sm);
+    width: 100%;
+}
+
 .address-information {
     display: flex;
     gap: var(--whitespace-lg);
@@ -224,6 +231,10 @@ main{
 
 .hidden {
     display: none;
+}
+
+.block {
+    display: block;
 }
 
 .invisible {
@@ -289,12 +300,10 @@ main{
         display: none;
     }
 
-    .footer-information > div {
-        width: calc(100% / 3);
-    }
-
     .footer-information {
-        display: flex;
+        display: grid;
+        gap: 36px;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .lg-max-width-half {
