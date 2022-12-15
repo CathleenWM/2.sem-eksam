@@ -79,7 +79,7 @@ a:not(.header-container a, .button) {
 }
 
 .header-container a.active {
-    color: var(--cta-hover);
+    text-decoration: underline;
 }
 
 .header-container a:not(.button):hover {
