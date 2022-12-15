@@ -32,16 +32,16 @@ form.addEventListener('submit', (e) => {
     }
 
     // ^ fra start, \d digit, + uendeligt mange gange, $ til slut
-    let reg = /^\d+$/ 
-    if (!reg.test(phone.value)) {
-        e.preventDefault();
-        createError("test", phone)
-    }
+    // let reg = /^\d+$/ 
+    // if (!reg.test(phone.value)) {
+    //     e.preventDefault();
+    //     createError("test", phone)
+    // }
 
-    else if (phone.value.length != 8) {
-        e.preventDefault();
-        createError("test", phone)
-    }
+    // else if (phone.value.length != 8) {
+    //     e.preventDefault();
+    //     createError("test", phone)
+    // }
 
 })
 
@@ -51,7 +51,7 @@ function cleanErrors(){
     // array = samling af ting (felter)
     let elementList = [fullname, corporation, email, phone]
 
-         // ++ betyder index = index +1
+         // ++ betyder: index = index +1
          // Her begynder loop = går hen over tingene og fjerner border en efter en
     for (let index = 0; index < elementList.length; index++) {
         const element = elementList[index];
