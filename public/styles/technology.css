@@ -187,6 +187,8 @@ section:hover .testimonials-container ion-icon {
 
 .news-article {
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
 }
 
 .news-article img {
@@ -195,10 +197,18 @@ section:hover .testimonials-container ion-icon {
 
 .news-article-content {
     padding: var(--whitespace-md);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.news-article-content > *:not(:first-child) {
-    margin-top: var(--whitespace-md);
+.news-article-content .button {
+    margin-top: auto !important;
+}
+
+.news-article-content > *:not(:last-child) {
+    margin-bottom: var(--whitespace-md);
 }
 
 /***** desktop *****/
