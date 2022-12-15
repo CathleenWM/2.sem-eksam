@@ -31,18 +31,6 @@ form.addEventListener('submit', (e) => {
         createError("test", email)
     }
 
-    // ^ fra start, \d digit, + uendeligt mange gange, $ til slut
-    // let reg = /^\d+$/ 
-    // if (!reg.test(phone.value)) {
-    //     e.preventDefault();
-    //     createError("test", phone)
-    // }
-
-    // else if (phone.value.length != 8) {
-    //     e.preventDefault();
-    //     createError("test", phone)
-    // }
-
 })
 
 
