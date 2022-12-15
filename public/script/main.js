@@ -1,3 +1,9 @@
-const height = document.querySelector('header').clientHeight
+const header = document.querySelector('header')
+const main = document.querySelector('main')
 
-document.querySelector('main').style.paddingTop = height + 'px'
+const setPadding = () => main.style.paddingTop = header.clientHeight + 'px'
+
+window.addEventListener('resize', () => {
+    setPadding()
+})
+setPadding()
