@@ -131,8 +131,9 @@ a > ion-icon {
 
 /* Header - Vicky */
 
-.header-container{
+.header-container {
     position: fixed;
+    z-index: 999;
 }
 
 header {
