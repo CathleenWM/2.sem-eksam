@@ -73,9 +73,13 @@ a {
     display: inline-block;
 }
 
-a:not(header a, .button) {
+a:not(.header-container a, .button) {
     color: var(--cta);
     text-decoration: underline;
+}
+
+.header-container a:not(.button):hover {
+    color: var(--cta-hover);
 }
 
 a > ion-icon {
@@ -141,7 +145,12 @@ header {
    padding-block: var(--whitespace-sm);
    padding-inline: 36px;
    position: fixed;
+   z-index: 999;
    width: 100%;
+}
+
+.burger-menu {
+    z-index: 99;
 }
 
 .navbar{
