@@ -6,4 +6,5 @@ const setPadding = () => main.style.paddingTop = header.clientHeight + 'px'
 window.addEventListener('resize', () => {
     setPadding()
 })
+
 setPadding()
