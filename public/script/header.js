@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector("#burgerMenu");
 const burgerMenuIcon = document.querySelector("#burgerMenuIcon");
-const windowPane = document.querySelector("main");
+const windowPane = document.querySelector("#windowPane");
 
 
 window.addEventListener("DOMContentLoaded",load);
@@ -13,6 +13,8 @@ function load (){
 function toggleBurgerMenu (){
     animation()
     burgerMenu.classList.toggle("hidden");
+    // const burgerMenuHeight = burgerMenu.clientHeight;
+    // console.log(burgerMenuHeight); // Height=173
     burgerMenuIcon.classList.toggle("fa-bars");
     burgerMenuIcon.classList.toggle("fa-x");
 }
