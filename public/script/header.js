@@ -1,6 +1,6 @@
 const burgerMenu = document.querySelector("#burgerMenu");
 const burgerMenuIcon = document.querySelector("#burgerMenuIcon");
-const windowPane = document.querySelector("#windowPane");
+const windowPane = document.querySelector("main");
 
 
 window.addEventListener("DOMContentLoaded",load);
