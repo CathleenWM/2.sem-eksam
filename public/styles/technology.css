@@ -31,7 +31,7 @@
 }
 
 .split-section-image {
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     width: 100%;
 }
@@ -60,7 +60,7 @@
 }
 
 .gallery-grid img:not(.gallery-image-wide) {
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     width: 100%;
 }
 
