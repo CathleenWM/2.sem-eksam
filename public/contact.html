@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <!---------- Start af siden ---------->
+    <!--- Start af siden -->
     <main id="windowPane">
         <section class="contact">
 
@@ -57,13 +57,13 @@
 
                 <div class="contact-container">
 
-                    <form action="" id="form" class="contact-form">
-                        <input type="text" id="fullname" placeholder="Fulde navn">
-                        <input type="text" id="corporation" placeholder="Virksomhed (valgfri)">
-                        <input type="text" name="" id="email" placeholder="Email adresse">
-                        <input type="text" id="phone" placeholder="Telefon (valgfri)">
-                        <input type="text" placeholder="Emne (valgfri)">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Besked"></textarea>
+                    <form action="post" id="form" class="contact-form">
+                        <input type="text" id="fullname"  name="name" placeholder="Fulde navn">
+                        <input type="text" id="corporation" name="company" placeholder="Virksomhed (valgfri)">
+                        <input type="text" name="email" id="email" placeholder="Email adresse">
+                        <input type="text" id="phone" name="phone" placeholder="Telefon (valgfri)">
+                        <input type="text" name="subject" placeholder="Emne (valgfri)">
+                        <textarea name="message" cols="30" rows="5" placeholder="Besked"></textarea>
                     
                         <button type="submit" class="button cta-button contact-cta">Indsend</button>
                     </form>
@@ -79,7 +79,7 @@
         </section>
     </main>
 
-    <!---------- Footer ---------->
+    <!-- Footer -->
 
     <footer class="section-padding bg-accent">
         <div class="container">
